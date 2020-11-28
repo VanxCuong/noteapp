@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:lab42/ui/views/note/note_viewmodel.dart';
+import 'package:noteapp/ui/views/note/note_viewmodel.dart';
 import 'package:stacked/stacked.dart';
 
 class NoteView extends StatelessWidget {
