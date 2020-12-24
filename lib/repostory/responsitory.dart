@@ -1,11 +1,16 @@
 import 'package:noteapp/repostory/local_repository.dart';
 
-// Lớp trừu tượng để cho các model thừa kế và dùng cho trong việc REST
-abstract class Responsitory<T> {
-  LocalRepository localRepository;
+
+/// Lớp trừu tượng để cho các model thừa kế và dùng trong việc
+/// thêm / sửa / xóa và lấy dữ liệu (Create, Read, Update, Delete - CRUD)
+abstract class Repository<T> {
+  LocalRepository localRepo;
 
   Future<dynamic> insert(T item);
+
   Future<dynamic> update(T item);
+
   Future<dynamic> delete(T item);
-  Future<List<T>> items(T item);
+
+  Future<List<T>> items();
 }
